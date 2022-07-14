@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastre-se</h1>
+
+        <form class="row g-3" onsubmit="return false">
+            <div class="col-md-2">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" value="60841670" >
+            </div>
+            <div class="col-md-5">
+                <label for="rua" class="form-label">Logradouro</label>
+                <input type="text" class="form-control" id="rua">
+            </div>
+            <div class="col-md-1">
+                <label for="numero" class="form-label">N°</label>
+                <input type="text" class="form-control" id="numero">
+            </div>
+            <div class="col-5">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="Digite o bairro">
+            </div>
+            <div class="col-md-2">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="estado" class="form-select">
+                    <option selected>Selecione...</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputState" class="form-label">Cidade</label>
+                <select id="cidade" class="form-select">
+                    <option selected>Selecione...</option>
+                </select>
+            </div>
+
+            <section class="container resultado pt-4">
+                <h2>Form Data</h2>
+                <pre></pre>
+              </section>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" onclick="findAddressByCep()">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
